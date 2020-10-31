@@ -3,7 +3,11 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget() {
+<<<<<<< HEAD
   return document.querySelector('#nested .target');
+=======
+  return document.querySelector('#nested.target');
+>>>>>>> 17db556155a513d76b77aef2574d29a4650f3488
 }
 
 function increaseRankBy(n) {
@@ -13,7 +17,11 @@ function increaseRankBy(n) {
     let children = rankedLists[i].children;
     
     for (let j = 0, k = children.length; j < k; j++) {
+<<<<<<< HEAD
       children[j].innerHTML = parseInt(children[j].innerHTML) + n;
+=======
+      children[j].innerHTML = parseInt(children[i].innerHTML) + n;
+>>>>>>> 17db556155a513d76b77aef2574d29a4650f3488
     }
   }
 }
